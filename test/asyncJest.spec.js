@@ -1,4 +1,4 @@
-const assert = require('assert');
+/* const assert = require('assert'); */
 const answerPhone = require('../src/asyncJest');
 /*
 A função answerPhone recebe um parâmetro boleano.
@@ -17,6 +17,6 @@ describe('1 - O retorno do telefonema', () => {
   test('ocupado', async () => {
     await answerPhone(false).catch((error) => (
       expect(error.message).toBe('Infelizmente não podemos atender...')
-    ))
+    ));
   });
 });
